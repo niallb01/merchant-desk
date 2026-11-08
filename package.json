@@ -1,0 +1,15 @@
+{
+  "name": "merchant-desk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Seller ops copilot. M01 is unit economics in pure TypeScript: margin, days of cover, and a bleeder flag. It does not call Amazon or a model.",
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test lib/economics.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.12",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
