@@ -91,7 +91,7 @@ CSV import and SP-API stay off this list until M38 is done. They get their own n
 | M01 | **Done** |
 | M02 | **Done** |
 | M03 | **Done** |
-| M04 | Not started |
+| M04 | **Done** |
 | M05 | Not started |
 | M06 | Not started |
 | M07 | Not started |
@@ -206,7 +206,7 @@ npm test
 
 ## Phase B — One more seller idea at a time (still no database)
 
-### M04 — Seller SKU and ASIN
+### M04 — Seller SKU and ASIN ✅
 
 **Concept:** You have an id for your offer. Amazon has an id for the catalog page. They are not the same field.
 
@@ -223,6 +223,8 @@ npm test
 - Seed ASINs, fake on purpose: Hero `B0HEROMUG1`, Low stock `B0LOWBTL24`, Bleeder `B0BLEEDC13`, Launch `B0NEWLAMP07`.
 
 **Not in this step:** Fees split, database, any call to Amazon.
+
+**Done:** `asin` sits beside `sellerSku` on `SkuSnapshot`. Seed ASINs are Hero `B0HEROMUG1`, Low stock `B0LOWBTL24`, Bleeder `B0BLEEDC13`, Launch `B0NEWLAMP07`. Tests pin Hero’s ASIN and Hero’s margin amount still at **500**. Economics stay keyed by id / seller SKU.
 
 ---
 
@@ -754,7 +756,7 @@ Code from Phase A and B still decides the flags. SQL stores the inputs.
 
 ## Session checklist
 
-1. Open only the current micro-step (the next one is M04).
+1. Open only the current micro-step (the next one is M05).
 2. Implement only what that step lists under **Adds**.
 3. If the step wires browser UI to a route handler, add the dev wire logs from **How we work** §8.
 4. Run **You run**.
@@ -766,4 +768,4 @@ Code from Phase A and B still decides the flags. SQL stores the inputs.
 
 ## When you’re ready
 
-M01, M02, and M03 are done. Next session is **M04 only**: add `asin` beside the seller SKU, and leave the economics alone.
+M01, M02, M03, and M04 are done. Next session is **M05 only**: split estimated fees into referral and FBA fulfilment, and leave the Hero margin at 500.

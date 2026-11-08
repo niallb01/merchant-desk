@@ -21,6 +21,12 @@ function snapshot(overrides: Partial<SkuSnapshot>): SkuSnapshot {
 }
 
 describe("seed stories", () => {
+  it("keeps Hero’s ASIN separate from the seller SKU and the margin amount at 500", () => {
+    assert.equal(hero.sellerSku, "HERO-MUG-16");
+    assert.equal(hero.asin, "B0HEROMUG1");
+    assert.equal(assessSku(hero).margin.amount, 500);
+  });
+
   it("keeps Hero profitable, stocked past two weeks, and under the ad limit", () => {
     const result = assessSku(hero);
 

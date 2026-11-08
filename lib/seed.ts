@@ -17,6 +17,7 @@ export const STORY_TODAY = "2026-11-06";
 export const hero: SkuSnapshot = {
   id: "sku-hero",
   sellerSku: "HERO-MUG-16",
+  asin: "B0HEROMUG1",
   name: "Insulated travel mug 16oz",
   stage: "established",
   revenue: 2000,
@@ -32,6 +33,7 @@ export const hero: SkuSnapshot = {
 export const lowStock: SkuSnapshot = {
   id: "sku-low-stock",
   sellerSku: "LOW-BOTTLE-24",
+  asin: "B0LOWBTL24",
   name: "Stainless bottle 24oz",
   stage: "established",
   revenue: 1000,
@@ -47,6 +49,7 @@ export const lowStock: SkuSnapshot = {
 export const bleeder: SkuSnapshot = {
   id: "sku-bleeder",
   sellerSku: "BLEED-CASE-13",
+  asin: "B0BLEEDC13",
   name: "Phone case clear",
   stage: "established",
   revenue: 500,
@@ -65,6 +68,7 @@ export const bleeder: SkuSnapshot = {
 export const launch: SkuSnapshot = {
   id: "sku-launch",
   sellerSku: "NEW-LAMP-07",
+  asin: "B0NEWLAMP07",
   name: "Desk lamp clip",
   stage: "launch",
   revenue: 0,
